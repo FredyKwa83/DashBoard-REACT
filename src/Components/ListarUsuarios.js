@@ -6,7 +6,7 @@ function ListarUsuarios() {
 
   useEffect(() => {
     // Realiza la solicitud HTTP para obtener la lista de usuarios
-    fetch('http://localhost:3005/user/api/')
+    fetch('http://localhost:3004/user/api/')
       .then((response) => response.json())
       .then((data) => setUsers(data))
       .catch((error) => console.error('Error al obtener la lista de usuarios: ', error));

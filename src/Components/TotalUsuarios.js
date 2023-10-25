@@ -5,7 +5,7 @@ function TotalUsuarios() {
 
   useEffect(() => {
     // Realiza la solicitud HTTP para obtener la lista de usuarios
-    fetch('http://localhost:3005/user/api/')
+    fetch('http://localhost:3004/user/api/')
       .then((res) => res.json())
       .then((data) => {
         setTotalUsuarios(data.length); // Actualiza el estado totalUsuarios con la cantidad de usuarios

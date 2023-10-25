@@ -6,7 +6,7 @@ function UltimoUsuario() {
   useEffect(() => {
     const fetchLastUser = async () => {
       try {
-        const response = await fetch('http://localhost:3005/user/api/');
+        const response = await fetch('http://localhost:3004/user/api/');
         if (!response.ok) {
           throw new Error('Error al obtener los datos');
         }
@@ -30,7 +30,6 @@ function UltimoUsuario() {
           <p style={{ color: 'black', fontWeight:"bold", fontSize:"16px"}}>Nombre: {lastUser.nombre}</p>
           <p style={{ color: 'black', fontWeight:"bold", fontSize:"16px" }} >Email: {lastUser.email}</p>
           <p style={{ color: 'black', fontWeight:"bold", fontSize:"16px" }} >Rol: {lastUser.rol}</p>
-          {/* Agrega más propiedades según las que tengas en tu API */}
         </div>
       ) : (
         <p>Cargando el último usuario...</p>

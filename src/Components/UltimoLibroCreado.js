@@ -52,7 +52,7 @@ function UltimoLibroCreado() {
   useEffect(() => {
     const fetchLastBook = async () => {
       try {
-        const response = await fetch('http://localhost:3005/api/');
+        const response = await fetch('http://localhost:3004/api/');
         if (response.ok) {
           const data = await response.json();
           if (data.length > 0) {

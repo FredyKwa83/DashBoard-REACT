@@ -17,7 +17,7 @@ const [libros, setLibros] = useState([])
 
 useEffect(() => {
   const getLibros = () => {
-    fetch("http://localhost:3005/api/")
+    fetch("http://localhost:3004/api/")
       .then(res => res.json())
       .then(data => {
         setLibros(data.data); // Actualiza el estado libros con los detalles de los libros

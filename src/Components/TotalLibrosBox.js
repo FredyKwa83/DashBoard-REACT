@@ -6,7 +6,7 @@ const TotalLibrosBox = () => {
 
   useEffect(() => {
     const getLibros = () => {
-      fetch('http://localhost:3005/api/')
+      fetch('http://localhost:3004/api/')
         .then((res) => res.json())
         .then((data) => {
           setTotalLibros(data.total); // Actualiza el estado con la cantidad total de libros

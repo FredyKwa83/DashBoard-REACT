@@ -8,7 +8,7 @@ function RolUsuarios() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch('http://localhost:3005/user/api/');
+        const response = await fetch('http://localhost:3004/user/api/');
         if (response.ok) {
           const data = await response.json();
           // Filtra los usuarios por su rol y cuenta el total de cada categoría
