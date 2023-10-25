@@ -17,7 +17,7 @@ const buttonStyle = {
 function Button() {
   const redirectToExternalLink = () => {
     // Aquí debes especificar la URL externa a la que deseas redirigir
-    const externalLink = 'http://localhost:3005/';
+    const externalLink = 'http://localhost:3004/';
 
     // Abre la URL en una nueva pestaña o ventana del navegador
     window.open(externalLink, '_blank');
